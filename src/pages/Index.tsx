@@ -1,16 +1,25 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Hero } from "@/components/aura/Hero";
+import { About } from "@/components/aura/About";
+import { Services } from "@/components/aura/Services";
+import { WhyAura } from "@/components/aura/WhyAura";
+import { Team } from "@/components/aura/Team";
+import { Packages } from "@/components/aura/Packages";
+import { Testimonials } from "@/components/aura/Testimonials";
+import { Booking } from "@/components/aura/Booking";
+import { Footer } from "@/components/aura/Footer";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
-  return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
-  );
-};
-
-const Index = PlaceholderIndex;
+const Index = () => (
+  <main className="overflow-x-hidden">
+    <Hero />
+    <About />
+    <Services />
+    <WhyAura />
+    <Team />
+    <Packages />
+    <Testimonials />
+    <Booking />
+    <Footer />
+  </main>
+);
 
 export default Index;
